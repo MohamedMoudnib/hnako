@@ -1,0 +1,6 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#fff5e6"/>
+  <rect x="150" y="50" width="500" height="400" fill="#fff" stroke="#f7941d" stroke-width="3" rx="10"/>
+  <text x="400" y="250" font-family="Arial" font-size="24" fill="#f7941d" text-anchor="middle">داخل الجهاز</text>
+  <text x="400" y="280" font-family="Arial" font-size="18" fill="#999" text-anchor="middle">Inside View</text>
+</svg>

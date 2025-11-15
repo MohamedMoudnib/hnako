@@ -1,319 +1,124 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hnako - أفضل منتج بأفضل سعر. توصيل سريع في جميع أنحاء المغرب. الدفع عند الاستلام.">
-    <meta name="keywords" content="hnako, منتجات مغربية, توصيل سريع, الدفع عند الاستلام">
-    <meta name="author" content="Hnako">
-    <title>Hnako - منتجك المثالي بأفضل سعر</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheet -->
+    <title>Tasteoria - حافظ على طعامك طازجًا</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- SECTION 1: HERO (Problem + Attention) -->
-    <section class="hero" id="hero">
-        <div class="container">
-            <div class="logo-container">
-                <img src="assets/logo.png" alt="Hnako Logo" class="logo">
-            </div>
-            
-            <h1 class="hero-headline">
-                اكتشف الحل المثالي لمشكلتك اليومية!
-            </h1>
-            
-            <p class="hero-subheadline">
-                منتج عالي الجودة، سعر لا يُقاوم، وتوصيل سريع لباب منزلك
-            </p>
-            
-            <div class="hero-image-container">
-                <img src="assets/img1.jpg" alt="Product Hero Image" class="hero-image">
-            </div>
-            
-            <button class="cta-button" id="ctaButton">
-                اطلب الآن - عرض محدود! 🔥
-            </button>
-            
-            <div class="trust-icons">
-                <div class="trust-item">
-                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 7L9 18L4 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>الدفع عند الاستلام</span>
-                </div>
-                <div class="trust-item">
-                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>توصيل سريع</span>
-                </div>
-                <div class="trust-item">
-                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    <span>دعم 24/7</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Top Promotion Banner -->
+    <div class="promo-banner">
+        <p>عرض خاص: التوصيل بالمجان و الدفع عند الاستلام</p>
+    </div>
 
-    <!-- SECTION 2: PROBLEM AGITATION -->
-    <section class="problem-agitation" id="problem">
+    <!-- Header -->
+    <header class="main-header">
         <div class="container">
-            <h2 class="section-title">هل تعاني من هذه المشاكل؟</h2>
-            
-            <div class="problem-content">
-                <div class="problem-images">
-                    <img src="assets/img2.jpg" alt="Problem illustration 1" class="problem-img">
-                    <img src="assets/img3.jpg" alt="Problem illustration 2" class="problem-img">
-                </div>
-                
-                <div class="problem-text">
-                    <p>
-                        😓 تعب من البحث عن الحلول المؤقتة؟<br>
-                        😤 سئمت من المنتجات ذات الجودة الرديئة؟<br>
-                        💸 تدفع الكثير ولا تحصل على نتائج مُرضية؟<br><br>
-                        <strong>حان الوقت للتغيير!</strong> منتجنا مصمم خصيصاً لحل مشكلتك بشكل نهائي.
-                    </p>
-                </div>
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Tasteoria Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">الصفحة الرئيسية</a></li>
+                    <li><a href="#">التعليقات</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <img src="https://icongr.am/clarity/search.svg?size=24&color=000000" alt="Search Icon" class="icon">
+                <img src="https://icongr.am/clarity/shopping-cart.svg?size=24&color=000000" alt="Cart Icon" class="icon">
             </div>
-        </div>
-    </section>
-
-    <!-- SECTION 3: SOLUTION -->
-    <section class="solution" id="solution">
-        <div class="container">
-            <h2 class="section-title">الحل الذي كنت تبحث عنه!</h2>
-            
-            <div class="solution-grid">
-                <div class="solution-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/>
-                        </svg>
-                    </div>
-                    <h3>جودة عالية</h3>
-                    <p>مصنوع من أفضل المواد لضمان الاستدامة والفعالية</p>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3>نتائج سريعة</h3>
-                    <p>ستلاحظ الفرق من الاستخدام الأول - مضمون 100%</p>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="currentColor"/>
-                        </svg>
-                    </div>
-                    <h3>سهل الاستخدام</h3>
-                    <p>تصميم عملي وبسيط يناسب الجميع - بدون تعقيدات</p>
-                </div>
-            </div>
-            
-            <div class="benefit-highlight">
-                <p>⭐ <strong>عرض خاص:</strong> احصل على خصم 50% + شحن مجاني لفترة محدودة!</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 4: SOCIAL PROOF -->
-    <section class="social-proof" id="testimonials">
-        <div class="container">
-            <h2 class="section-title">ماذا يقول عملاؤنا؟</h2>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "منتج رائع! استخدمته لمدة أسبوع والنتائج مذهلة. أنصح به بشدة!"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="avatar">👤</div>
-                        <div class="author-info">
-                            <strong>سارة م.</strong>
-                            <span>الدار البيضاء</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "جودة ممتازة وسعر مناسب. التوصيل كان سريع جداً. شكراً لكم!"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="avatar">👤</div>
-                        <div class="author-info">
-                            <strong>أحمد ب.</strong>
-                            <span>الرباط</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "أفضل قرار اتخذته! المنتج فاق توقعاتي بكثير. سأطلب مرة أخرى بالتأكيد."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="avatar">👤</div>
-                        <div class="author-info">
-                            <strong>فاطمة ح.</strong>
-                            <span>مراكش</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 5: PRICE + OFFER -->
-    <section class="price-offer" id="offer">
-        <div class="container">
-            <h2 class="section-title">عرض لفترة محدودة! ⏰</h2>
-            
-            <div class="price-container">
-                <div class="old-price">
-                    <span class="price-label">السعر العادي:</span>
-                    <span class="price-value">599 درهم</span>
-                </div>
-                
-                <div class="new-price">
-                    <span class="price-label">السعر الخاص:</span>
-                    <span class="price-value">299 درهم فقط!</span>
-                </div>
-                
-                <div class="discount-badge">
-                    خصم 50%
-                </div>
-            </div>
-            
-            <div class="offer-text">
-                <p>🎁 <strong>هدية مجانية</strong> مع كل طلب + شحن مجاني لجميع مدن المغرب</p>
-            </div>
-            
-            <div class="countdown-container">
-                <p class="countdown-title">ينتهي العرض خلال:</p>
-                <div class="countdown" id="countdown">
-                    <div class="countdown-item">
-                        <span class="countdown-value" id="hours">00</span>
-                        <span class="countdown-label">ساعة</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-value" id="minutes">00</span>
-                        <span class="countdown-label">دقيقة</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-value" id="seconds">00</span>
-                        <span class="countdown-label">ثانية</span>
-                    </div>
-                </div>
-            </div>
-            
-            <button class="cta-button" id="ctaButton2">
-                اطلب الآن قبل انتهاء العرض! 🔥
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
             </button>
         </div>
-    </section>
+    </header>
 
-    <!-- SECTION 6: ORDER FORM -->
-    <section class="order-form" id="orderForm">
-        <div class="container">
-            <h2 class="section-title">أكمل طلبك الآن</h2>
-            <p class="form-subtitle">املأ المعلومات أدناه وسنتواصل معك فوراً</p>
-            
-            <form id="orderFormElement" class="form">
-                <div class="form-group">
-                    <label for="fullName">الاسم الكامل *</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="أدخل اسمك الكامل" required>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-layout">
+                <!-- Product Info & Form -->
+                <div class="hero-content">
+                    <h1>حافظ على طعامك طازجًا حتى 5x أطول! 🍓🥩 - آلة تغليف الفراغ الذكية</h1>
+                    <div class="price">
+                        <span class="new-price">199 د.م</span>
+                        <del class="old-price">279 د.م</del>
+                    </div>
+                    <p class="form-intro">للطلب المرجوا ملأ الاستماره اسفله</p>
+                    <form id="order-form">
+                        <input type="text" name="name" placeholder="الاسم الكامل" required>
+                        <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+                        <input type="text" name="address" placeholder="العنوان" required>
+                        
+                        <div class="form-actions">
+                            <div class="quantity-selector">
+                                <button type="button" class="quantity-btn minus-btn">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button type="button" class="quantity-btn plus-btn">+</button>
+                            </div>
+                            <button type="submit" class="cta-button">أضف هنا للطلب</button>
+                        </div>
+                    </form>
                 </div>
-                
-                <div class="form-group">
-                    <label for="phone">رقم الهاتف *</label>
-                    <input type="tel" id="phone" name="phone" placeholder="0612345678" required>
+                <!-- Product Image -->
+                <div class="hero-image">
+                    <img src="assets/product-main.jpg" alt="آلة تغليف الفراغ الذكية">
                 </div>
-                
-                <div class="form-group">
-                    <label for="city">المدينة *</label>
-                    <select id="city" name="city" required>
-                        <option value="">اختر مدينتك</option>
-                        <option value="Casablanca">الدار البيضاء</option>
-                        <option value="Rabat">الرباط</option>
-                        <option value="Fes">فاس</option>
-                        <option value="Marrakech">مراكش</option>
-                        <option value="Tangier">طنجة</option>
-                        <option value="Agadir">أكادير</option>
-                        <option value="Meknes">مكناس</option>
-                        <option value="Oujda">وجدة</option>
-                        <option value="Kenitra">القنيطرة</option>
-                        <option value="Tetouan">تطوان</option>
-                        <option value="Safi">آسفي</option>
-                        <option value="Temara">تمارة</option>
-                        <option value="Other">أخرى</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="address">العنوان الكامل *</label>
-                    <textarea id="address" name="address" rows="3" placeholder="الحي، الشارع، رقم المنزل..." required></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label for="quantity">الكمية *</label>
-                    <select id="quantity" name="quantity" required>
-                        <option value="1">1 (299 درهم)</option>
-                        <option value="2">2 (550 درهم - وفر 48 درهم)</option>
-                        <option value="3">3 (799 درهم - وفر 98 درهم)</option>
-                        <option value="4">4 (1050 درهم - وفر 146 درهم)</option>
-                        <option value="5">5 (1250 درهم - وفر 245 درهم)</option>
-                    </select>
-                </div>
-                
-                <button type="submit" class="submit-button">
-                    ✅ تأكيد الطلب - الدفع عند الاستلام
-                </button>
-                
-                <p class="form-note">
-                    🔒 معلوماتك آمنة ومحمية. لن يتم مشاركتها مع أي طرف ثالث.
-                </p>
-            </form>
-        </div>
-    </section>
-
-    <!-- SECTION 7: FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-logo">
-                <img src="assets/logo.png" alt="Hnako Logo" class="logo-footer">
             </div>
-            
-            <p class="copyright">© Hnako 2025 – جميع الحقوق محفوظة</p>
-            
-            <div class="footer-links">
-                <a href="#shipping">سياسة الشحن</a>
-                <a href="#refund">سياسة الاسترجاع</a>
-                <a href="#contact">اتصل بنا</a>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="info-section">
+            <div class="container">
+                <h2>هل تعاني من فساد الطعام بسرعة في الثلاجة؟ هل تتخلص من اللحوم والخضروات بسبب فقدان الطراوة؟</h2>
+                <img src="assets/feature-1.jpg" alt="Vacuum sealer preserving meat and vegetables" class="feature-image">
+                <p>الأطعمة المكشوفة تفقد جودتها بسرعة وتتعرض للبكتيريا، مما يؤدي إلى خسائر مالية كبيرة. كما أن التخزين التقليدي لا يمنع الهواء من التفاعل مع الطعام، مما يؤدي إلى فقدان النكهة والجودة.</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <img src="assets/feature-2.jpg" alt="Inside view of the vacuum sealer" class="feature-image">
+                <img src="assets/feature-3.jpg" alt="Dimensions and buttons of the vacuum sealer" class="feature-image">
+                <div class="features-list-container">
+                    <h3>مميزاتها:</h3>
+                    <ul class="features-list">
+                        <li>✔️ تحافظ على الأطعمة طازجة وخالية من البكتيريا</li>
+                        <li>✔️ سهلة الاستخدام بلمسة زر واحدة</li>
+                        <li>✔️ مثالية للحوم، الخضروات، الفواكه، وحتى الوجبات الجاهزة</li>
+                        <li>✔️ تصميم محمول وأنيق، مناسب لكل المطابخ</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp Floating Button -->
+        <a href="#" class="whatsapp-button">
+            <img src="https://icongr.am/fontawesome/whatsapp.svg?size=40&color=ffffff" alt="WhatsApp Icon">
+            <span>اضغط هنا للطلب عبر الواتساب</span>
+        </a>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <h3>اتصل بنا</h3>
+             <div class="form-actions">
+                <div class="quantity-selector">
+                    <button type="button" class="quantity-btn minus-btn">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button type="button" class="quantity-btn plus-btn">+</button>
+                </div>
+                <button type="submit" form="order-form" class="cta-button">أضف هنا للطلب</button>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>

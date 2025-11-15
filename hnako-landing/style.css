@@ -1,0 +1,654 @@
+/* ========================================
+   DESIGN SYSTEM & CSS VARIABLES
+   ======================================== */
+:root {
+    --primary: #ff6600;
+    --primary-dark: #e65500;
+    --dark: #111;
+    --light: #fff;
+    --gray: #666;
+    --gray-light: #f5f5f5;
+    --radius: 12px;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 6px 30px rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s ease;
+}
+
+/* ========================================
+   RESET & BASE STYLES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--dark);
+}
+
+/* ========================================
+   SECTION 1: HERO
+   ======================================== */
+.hero {
+    background: linear-gradient(135deg, #fff 0%, #fff5f0 100%);
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.hero-headline {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subheadline {
+    font-size: 18px;
+    color: var(--gray);
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-image-container {
+    margin: 40px 0;
+}
+
+.hero-image {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.cta-button {
+    background: var(--primary);
+    color: var(--light);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 40px;
+}
+
+.cta-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.trust-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.trust-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--primary);
+}
+
+/* ========================================
+   SECTION 2: PROBLEM AGITATION
+   ======================================== */
+.problem-agitation {
+    padding: 60px 20px;
+    background-color: var(--gray-light);
+}
+
+.problem-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.problem-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.problem-img {
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    width: 100%;
+}
+
+.problem-text {
+    max-width: 700px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.problem-text strong {
+    color: var(--primary);
+    font-size: 18px;
+}
+
+/* ========================================
+   SECTION 3: SOLUTION
+   ======================================== */
+.solution {
+    padding: 60px 20px;
+    background-color: var(--light);
+}
+
+.solution-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.solution-card {
+    background: var(--light);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    color: var(--primary);
+}
+
+.card-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.solution-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.solution-card p {
+    font-size: 15px;
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.benefit-highlight {
+    background: linear-gradient(135deg, var(--primary) 0%, #ff8833 100%);
+    color: var(--light);
+    padding: 25px;
+    border-radius: var(--radius);
+    text-align: center;
+    font-size: 18px;
+    box-shadow: var(--shadow);
+}
+
+.benefit-highlight strong {
+    font-weight: 700;
+}
+
+/* ========================================
+   SECTION 4: SOCIAL PROOF
+   ======================================== */
+.social-proof {
+    padding: 60px 20px;
+    background-color: var(--gray-light);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: var(--light);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 15px;
+    color: var(--gray);
+    margin-bottom: 20px;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--gray-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-info strong {
+    font-size: 16px;
+    color: var(--dark);
+}
+
+.author-info span {
+    font-size: 13px;
+    color: var(--gray);
+}
+
+/* ========================================
+   SECTION 5: PRICE + OFFER
+   ======================================== */
+.price-offer {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #fff5f0 0%, #ffe6cc 100%);
+    text-align: center;
+}
+
+.price-container {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.old-price {
+    margin-bottom: 10px;
+}
+
+.old-price .price-value {
+    font-size: 24px;
+    color: var(--gray);
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+.new-price {
+    margin-bottom: 20px;
+}
+
+.new-price .price-value {
+    font-size: 48px;
+    color: var(--primary);
+    font-weight: 800;
+    display: block;
+}
+
+.price-label {
+    display: block;
+    font-size: 14px;
+    color: var(--gray);
+    margin-bottom: 5px;
+}
+
+.discount-badge {
+    display: inline-block;
+    background: #ff0000;
+    color: var(--light);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    transform: rotate(-5deg);
+}
+
+.offer-text {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: var(--dark);
+}
+
+.offer-text strong {
+    color: var(--primary);
+}
+
+.countdown-container {
+    margin: 40px auto;
+    max-width: 500px;
+}
+
+.countdown-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.countdown-item {
+    background: var(--light);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    min-width: 80px;
+}
+
+.countdown-value {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.countdown-label {
+    display: block;
+    font-size: 12px;
+    color: var(--gray);
+    margin-top: 5px;
+}
+
+/* ========================================
+   SECTION 6: ORDER FORM
+   ======================================== */
+.order-form {
+    padding: 60px 20px;
+    background-color: var(--light);
+}
+
+.form-subtitle {
+    text-align: center;
+    color: var(--gray);
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: var(--radius);
+    font-family: inherit;
+    transition: var(--transition);
+    background: var(--light);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    width: 100%;
+    background: var(--primary);
+    color: var(--light);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.form-note {
+    text-align: center;
+    font-size: 13px;
+    color: var(--gray);
+    margin-top: 20px;
+}
+
+/* ========================================
+   SECTION 7: FOOTER
+   ======================================== */
+.footer {
+    padding: 60px 20px 30px;
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.logo-footer {
+    max-width: 150px;
+    margin: 0 auto;
+    filter: brightness(0) invert(1);
+}
+
+.copyright {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN - TABLET & DESKTOP
+   ======================================== */
+@media (min-width: 768px) {
+    .hero-headline {
+        font-size: 48px;
+    }
+    
+    .hero-subheadline {
+        font-size: 20px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .cta-button {
+        width: auto;
+        padding: 16px 50px;
+    }
+    
+    .problem-content {
+        flex-direction: row;
+        text-align: right;
+    }
+    
+    .problem-text {
+        text-align: right;
+    }
+    
+    .solution-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .countdown-item {
+        min-width: 100px;
+    }
+    
+    .countdown-value {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        padding: 80px 20px;
+    }
+    
+    .hero-headline {
+        font-size: 56px;
+    }
+    
+    section {
+        padding: 80px 20px;
+    }
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero,
+.problem-agitation,
+.solution,
+.social-proof,
+.price-offer,
+.order-form {
+    animation: fadeIn 0.8s ease-out;
+}
